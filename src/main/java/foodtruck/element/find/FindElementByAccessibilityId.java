@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 /**
@@ -22,8 +21,9 @@ public class FindElementByAccessibilityId extends BaseCase {
     @Test
     public void findLoginButton() {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("login_button_on_welcome_page")));
+
         long totalElapsed = 0;
-        int count = 100;
+        int count = 10;
         for (int i = 0; i < count; i++) {
             StopWatch stopWatch = new StopWatch();
             WebElement loginButton = driver.findElementByAccessibilityId("login_button_on_welcome_page");
@@ -31,13 +31,5 @@ public class FindElementByAccessibilityId extends BaseCase {
             LOGGER.info("elapsed={}", stopWatch.elapsed());
         }
         LOGGER.info("averaged elapsed={}", totalElapsed / count);
-    }
-
-    @AfterClass
-    public void tearDown() {
-        //End the running session
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }
