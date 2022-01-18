@@ -12,6 +12,7 @@ public class SysProperties {
     public static String DEVICE_VERSION;
     public static String APP_PATH;
     public static String APPIUM_URL;
+    public static String BUNDLE_ID;
 
     static {
         try {
@@ -23,6 +24,7 @@ public class SysProperties {
             DEVICE_VERSION = properties.getProperty("device.version");
             APP_PATH = properties.getProperty("app.path");
             APPIUM_URL = properties.getProperty("appium.url");
+            BUNDLE_ID = properties.getProperty("app.bundleId");
         } catch (Exception e) {
             e.printStackTrace();
         }
