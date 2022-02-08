@@ -22,6 +22,8 @@ public class BaseUtils {
     protected static final Logger LOGGER = LoggerFactory.getLogger(DriverInstance.class);
 
     public static void swipeToUp(int repeats, long delayPerSwipe) {
+        StopWatch stopWatch=new StopWatch();
+        LOGGER.info("----start to swipe----");
         for (int i = 0; i < repeats; i++) {
             new TouchAction<>(driver)
                     .press(point(device.getWidth() / 2, device.getHeight() / 2))
@@ -29,6 +31,6 @@ public class BaseUtils {
                     .moveTo(point(device.getWidth() / 2, 0))
                     .release().perform();
         }
-        LOGGER.info("controlledSwipe by touchAction");
+        LOGGER.info("controlledSwipe by touchAction time elapsed {}",stopWatch.elapsed()/1000000);
     }
 }

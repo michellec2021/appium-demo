@@ -1,7 +1,7 @@
 package foodtruck.testcase;
 
 import foodtruck.common.BaseCase;
-import foodtruck.element.find.RepeatFindElementByAccessibility;
+import foodtruck.element.find.RepeatFindElementByCommand;
 import foodtruck.helpers.UserLoginHelper;
 import foodtruck.pages.*;
 import foodtruck.util.BaseUtils;
@@ -11,13 +11,13 @@ import org.testng.annotations.Test;
 /**
  * @author Michelle
  */
-public class FindElementByAccessibilityIdTest extends BaseCase {
-    RepeatFindElementByAccessibility repeatFindElementByAccessibility;
+public class FindElementByCommandTest extends BaseCase {
+    RepeatFindElementByCommand repeatFindElementByCommand;
 
     @BeforeClass
     public void initFindElement() {
-        repeatFindElementByAccessibility = new RepeatFindElementByAccessibility();
-        repeatFindElementByAccessibility.setCount(100);
+        repeatFindElementByCommand = new RepeatFindElementByCommand();
+        repeatFindElementByCommand.setCount(100);
     }
 
     @Test
@@ -25,7 +25,7 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         UserLoginHelper userLoginHelper = new UserLoginHelper();
         userLoginHelper.validUserLogin("mm@cc.com", "pwd11111");
         WonderHomePage wonderHomePage = new WonderHomePage();
-        repeatFindElementByAccessibility.findElementByAccessibility("wonder_on_home_page");
+        repeatFindElementByCommand.findElement("wonder_on_home_page");
     }
 
     @Test
@@ -33,13 +33,13 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         WonderHomePage wonderHomePage = new WonderHomePage();
         wonderHomePage.clickEnvoy();
         EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-        repeatFindElementByAccessibility.findElementByAccessibility("pickup_button_on_home_page");
+        repeatFindElementByCommand.findElement("pickup_button_on_home_page");
     }
 
     @Test
     public void findLoginButton() {
         WelcomePage welcomePage = new WelcomePage();
-        repeatFindElementByAccessibility.findElementByAccessibility("login_button_on_welcome_page");
+        repeatFindElementByCommand.findElement("login_button_on_welcome_page");
     }
 
     @Test
@@ -47,7 +47,8 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         WonderHomePage wonderHomePage = new WonderHomePage();
         wonderHomePage.clickEnvoy();
         EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-        repeatFindElementByAccessibility.findElementByAccessibility("Burgers_on_home_page");
+//        repeatFindElementByCommand.findElement("Burgers_on_home_page");
+        repeatFindElementByCommand.findElement("pickup_button_on_home_page");
     }
 
     @Test
@@ -57,20 +58,20 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         EnvoyHomePage envoyHomePage = new EnvoyHomePage();
         envoyHomePage.clickRestaurant("Closed - Marketplace Automation USE ONLY");
         EnvoyRestaurantDetailPage envoyRestaurantDetailPage = new EnvoyRestaurantDetailPage();
-        repeatFindElementByAccessibility.findElementByAccessibility("address_on_mkp_rlp_page");
+        repeatFindElementByCommand.findElement("address_on_mkp_rlp_page");
     }
 
     @Test
     public void findRestaurantOnWonderRLP() throws InterruptedException {
         WonderHomePage wonderHomePage = new WonderHomePage();
         Thread.sleep(10000);
-        repeatFindElementByAccessibility.findElementByAccessibility("XM Test Automation Use ONLY restaurant");
+        repeatFindElementByCommand.findElement("XM Test Automation Use ONLY restaurant");
     }
 
     @Test
     public void findWonderTab() {
         WonderHomePage wonderHomePage = new WonderHomePage();
-        repeatFindElementByAccessibility.findElementByAccessibility("wonder_on_home_page");
+        repeatFindElementByCommand.findElement("wonder_on_home_page");
     }
 
     @Test
@@ -79,7 +80,7 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         wonderHomePage.clickRestaurant("XM Test Automation Use ONLY");
         WonderRestaurantDetailPage wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
         BaseUtils.swipeToUp(1, 2000);
-        repeatFindElementByAccessibility.findElementByAccessibility("XM Test Chips & Salsa meal");
+        repeatFindElementByCommand.findElement("XM Test Chips & Salsa meal");
     }
 
     @Test
@@ -90,7 +91,7 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         BaseUtils.swipeToUp(1, 1000);
         wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");
         WonderMealDetailPage mealDetailPage = new WonderMealDetailPage();
-        repeatFindElementByAccessibility.findElementByAccessibility("take it button");
+        repeatFindElementByCommand.findElement("take it button");
     }
 
     @Test
@@ -98,7 +99,7 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         WonderHomePage wonderHomePage = new WonderHomePage();
         wonderHomePage.clickViewOrder();
         WonderShopCartPage wonderShopCartPage = new WonderShopCartPage();
-        repeatFindElementByAccessibility.findElementByAccessibility("XM Test Chips & Salsa_cart_item");
+        repeatFindElementByCommand.findElement("XM Test Chips & Salsa_cart_item");
     }
 
     @Test
@@ -108,6 +109,6 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
         WonderShopCartPage wonderShopCartPage = new WonderShopCartPage();
         wonderShopCartPage.clickCheckoutButton();
         WonderCheckoutPage checkoutPage = new WonderCheckoutPage();
-        repeatFindElementByAccessibility.findElementByAccessibility("address_delivery_instructions");
+        repeatFindElementByCommand.findElement("address_delivery_instructions");
     }
 }

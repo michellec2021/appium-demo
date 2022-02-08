@@ -19,4 +19,12 @@ public class EnvoyHomePage extends BasePage {
     public void clickPickupButton() {
         driver.findElementByAccessibilityId(PICKUP_BUTTON).click();
     }
+
+    public void clickWonderTab() {
+        driver.findElementByAccessibilityId(WONDER_TAB).click();
+    }
+
+    public void clickRestaurant(String restaurantName) {
+        driver.findElementByAccessibilityId(restaurantName + "_under_Burgers").click();
+    }
 }
