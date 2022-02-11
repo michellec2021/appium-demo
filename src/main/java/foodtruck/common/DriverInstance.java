@@ -40,12 +40,12 @@ public class DriverInstance {
         capabilities.setCapability("app", SysProperties.APP_PATH);
         capabilities.setCapability("noReset", "true");
         try {
-            if (SysProperties.DEVICE_OS.equals("android")) {
+            if (SysProperties.DEVICE_OS.equalsIgnoreCase("android")) {
                 capabilities.setCapability("automationName", "UIAutomator2");
                 capabilities.setCapability("platformName", "android");
                 capabilities.setCapability("platformVersion", SysProperties.DEVICE_VERSION);
                 driver = new AndroidDriver<>(new URL(SysProperties.APPIUM_URL), capabilities);
-            } else if (SysProperties.DEVICE_OS.equals("ios")) {
+            } else if (SysProperties.DEVICE_OS.equalsIgnoreCase("ios")) {
                 capabilities.setCapability("automationName", "XCUITest");
                 capabilities.setCapability("platformName", "ios");
                 capabilities.setCapability("autoAcceptAlerts", "true");

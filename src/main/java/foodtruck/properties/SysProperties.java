@@ -20,11 +20,24 @@ public class SysProperties {
             Properties properties = new Properties();
             properties.load(stream);
             DEVICE_OS = properties.getProperty("device.os");
-            DEVICE_NAME = properties.getProperty("device.name");
-            DEVICE_VERSION = properties.getProperty("device.version");
-            APP_PATH = properties.getProperty("app.path");
             APPIUM_URL = properties.getProperty("appium.url");
-            BUNDLE_ID = properties.getProperty("app.bundleId");
+            if (DEVICE_OS.equalsIgnoreCase("android")) {
+                InputStream androidSteam = ClassLoader.getSystemResourceAsStream("android.properties");
+                Properties androidProperties = new Properties();
+                androidProperties.load(androidSteam);
+                DEVICE_NAME = androidProperties.getProperty("device.name");
+                DEVICE_VERSION = androidProperties.getProperty("device.version");
+                APP_PATH = androidProperties.getProperty("app.path");
+                BUNDLE_ID = androidProperties.getProperty("app.bundleId");
+            } else {
+                InputStream iosStream = ClassLoader.getSystemResourceAsStream("ios.properties");
+                Properties iosProperties = new Properties();
+                iosProperties.load(iosStream);
+                DEVICE_NAME = iosProperties.getProperty("device.name");
+                DEVICE_VERSION = iosProperties.getProperty("device.version");
+                APP_PATH = iosProperties.getProperty("app.path");
+                BUNDLE_ID = iosProperties.getProperty("app.bundleId");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
