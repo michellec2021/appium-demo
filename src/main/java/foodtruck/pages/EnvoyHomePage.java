@@ -1,6 +1,7 @@
 package foodtruck.pages;
 
 import io.appium.java_client.MobileBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * @author Michelle
@@ -13,7 +14,7 @@ public class EnvoyHomePage extends BasePage {
     private static final String PICKUP_BUTTON = "pickup_button_on_home_page";
 
     public EnvoyHomePage() {
-        super(MobileBy.AccessibilityId(DELIVERY_BUTTON));
+        super(MobileBy.AccessibilityId("MKP_HOME_PAGE"));
     }
 
     public void clickPickupButton() {
@@ -25,6 +26,7 @@ public class EnvoyHomePage extends BasePage {
     }
 
     public void clickRestaurant(String restaurantName) {
-        driver.findElementByAccessibilityId(restaurantName + "_under_Burgers").click();
+        driverLongWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(restaurantName + "_under_Burgers"))).click();
+//        driver.findElementByAccessibilityId(restaurantName + "_under_Burgers").click();
     }
 }

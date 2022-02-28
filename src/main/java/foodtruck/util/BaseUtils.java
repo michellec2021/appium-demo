@@ -21,16 +21,23 @@ public class BaseUtils {
     static Device device = DriverInstance.of().device;
     protected static final Logger LOGGER = LoggerFactory.getLogger(DriverInstance.class);
 
-    public static void swipeToUp(int repeats, long delayPerSwipe) {
+    public static void swipeToUp(double distance, int repeats, long delayPerSwipe) {
+        if (distance < 0 || distance > 1) {
+            throw new Error("scroll distance must be between 0 and 1");
+        }
         StopWatch stopWatch=new StopWatch();
         LOGGER.info("----start to swipe----");
         for (int i = 0; i < repeats; i++) {
             new TouchAction<>(driver)
-                    .press(point(device.getWidth() / 2, device.getHeight() / 2))
+                    .press(point(device.getWidth() / 2, (int) (device.getHeight() * distance)))
                     .waitAction(WaitOptions.waitOptions(Duration.ofMillis(delayPerSwipe)))
                     .moveTo(point(device.getWidth() / 2, 0))
                     .release().perform();
         }
         LOGGER.info("controlledSwipe by touchAction time elapsed {}",stopWatch.elapsed()/1000000);
+    }
+
+    public static void swipeToUp(int repeats, long delayPerSwipe) {
+        swipeToUp(0.5, repeats, delayPerSwipe);
     }
 }

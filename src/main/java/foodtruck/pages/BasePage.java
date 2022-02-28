@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class BasePage {
     private static final int TIMEOUT = 1;
-    private static final int TIMEOUT_LONG = 20;
+    private static final int TIMEOUT_LONG = 60;
     public AppiumDriver<MobileElement> driver;
     public WebDriverWait driverWait;
     public WebDriverWait driverLongWait;

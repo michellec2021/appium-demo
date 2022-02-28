@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
  * resourceId(String id)
  * resourceIdMatches(String regex)
  * 7. unique attributes:
- * checked(booleean val)
+ * checked(boolean val)
  * clickable(boolean val)
  * enabled(boolean val)
  * focusable(boolean val)

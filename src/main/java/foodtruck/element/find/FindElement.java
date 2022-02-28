@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 public abstract class FindElement {
     protected final AppiumDriver<MobileElement> driver;
     protected long count = 100;
+    protected long sum = 0;
 
     protected abstract Logger getLogger();
 
@@ -28,11 +29,17 @@ public abstract class FindElement {
             totalElapsed = totalElapsed + stopWatch.elapsed();
             getLogger().info("find element elapsed time = {} ms", stopWatch.elapsed() / 1000000);
         }
-        getLogger().info("find element average elapsed time = {} ms", totalElapsed / count / 1000000);
+        long avgTime = totalElapsed / count / 1000000;
+        getLogger().info("find element average elapsed time = {} ms", avgTime);
+        sum = sum + avgTime;
         return mobileElement;
     }
 
     public void setCount(long count) {
         this.count = count;
+    }
+
+    public long getAvgTime(int loopCount) {
+        return sum / loopCount;
     }
 }

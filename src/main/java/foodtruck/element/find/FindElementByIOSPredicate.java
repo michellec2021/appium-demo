@@ -12,13 +12,12 @@ import org.slf4j.LoggerFactory;
  * name: element's accessibilityId or element's label if accessibilityId is not set
  * value: element's value
  * label: element's label value
- * rect: element's rectangle as a dictionary with the following keys: x, y, width, heigth
+ * rect: element's rectangle as a dictionary with the following keys: x, y, width, height
  * type: element's type, string
  * enabled: whether the element is enabled or not, 1/0
  * visible: whether the element is displayed or not, 1/0
  * accessible: whether the element is accessible or not, 1/0
  * accessibilityContainer: whether the element is an accessibility container or not, 1/0
- * <p>
  * Example:
  * 1. type == 'XCUIElementTypeButton' AND value BEGINSWITH[c] 'bla' AND visible == 1
  * ==> find elements of type XCUIElementTypeButton whose value starts with Bla/bla/BLA and which are visible
@@ -51,10 +50,10 @@ public class FindElementByIOSPredicate extends FindElement {
     }
 
     public MobileElement findElementByLabel(String label) {
-        return findElement(MobileBy.iOSNsPredicateString(String.format("label == '%s'", label)));
+        return findElement(MobileBy.iOSNsPredicateString(String.format("label == \"%s\"", label)));
     }
 
     public MobileElement findElementByName(String name) {
-        return findElement(MobileBy.iOSNsPredicateString(String.format("name == '%s'", name)));
+        return findElement(MobileBy.iOSNsPredicateString(String.format("name == \"%s\"", name)));
     }
 }

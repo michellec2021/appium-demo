@@ -21,7 +21,8 @@ public class WonderHomePage extends BasePage {
     }
 
     public void clickEnvoy() {
-        driver.findElementByAccessibilityId(ENVOY_TAB).click();
+        driverLongWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(ENVOY_TAB))).click();
+//        driver.findElementByAccessibilityId(ENVOY_TAB).click();
     }
 
     public void clickRestaurant(String restaurantName) {
@@ -29,6 +30,7 @@ public class WonderHomePage extends BasePage {
     }
 
     public void clickViewOrder(){
-        driver.findElementByAccessibilityId(VIEW_ORDER_BUTTON).click();
+        driverLongWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(VIEW_ORDER_BUTTON))).click();
+//        driver.findElementByAccessibilityId(VIEW_ORDER_BUTTON).click();
     }
 }

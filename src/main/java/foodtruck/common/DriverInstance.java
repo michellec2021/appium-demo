@@ -22,7 +22,7 @@ public class DriverInstance {
     public AppiumDriver<MobileElement> driver;
     public Device device;
 
-    private DriverInstance() {
+    public DriverInstance() {
         initSession();
     }
 
