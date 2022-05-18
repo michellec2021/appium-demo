@@ -80,24 +80,22 @@ public class TestFindElementByAndroidUIAutomatorDesc {
         for (int i = 0; i < loopCount; i++) {
             WonderHomePage wonderHomePage = new WonderHomePage();
             wonderHomePage.clickRestaurant("XM Test Automation Use ONLY");
-//            WonderRestaurantDetailPage wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
             Thread.sleep(5000);
             BaseUtils.swipeToUp(0.4, 2, 1000);
             findElementByAndroidUIAutomator.findElementByContentDesc("XM Test Chips & Salsa meal");
-//            wonderRestaurantDetailPage.clickBack();
             new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("back_button_on_restaurant_detail_page"))).click();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
     }
 
     @Test
-    public void findAddButtonOnWonderMDP()  {
+    public void findAddButtonOnWonderMDP() throws InterruptedException {
         findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
         findElementByAndroidUIAutomator.setCount(1);
         WonderHomePage wonderHomePage = new WonderHomePage();
         wonderHomePage.clickRestaurant("XM Test Automation Use ONLY");
-        WonderRestaurantDetailPage wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
         BaseUtils.swipeToUp(0.4,2, 1000);
+        WonderRestaurantDetailPage wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
         wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");
         WonderMealDetailPage mealDetailPage = new WonderMealDetailPage();
         findElementByAndroidUIAutomator.findElementByContentDesc("take it button");
@@ -107,13 +105,14 @@ public class TestFindElementByAndroidUIAutomatorDesc {
             wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");
             mealDetailPage = new WonderMealDetailPage();
             findElementByAndroidUIAutomator.findElementByContentDesc("take it button");
+            Thread.sleep(1000);
             mealDetailPage.clickBack();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
     }
 
     @Test
-    public void findButtonOnShopCartPage() {
+    public void findButtonOnShopCartPage() throws InterruptedException {
         findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
         findElementByAndroidUIAutomator.setCount(1);
         for (int i = 0; i < loopCount; i++) {
@@ -121,13 +120,14 @@ public class TestFindElementByAndroidUIAutomatorDesc {
             wonderHomePage.clickViewOrder();
             WonderShopCartPage wonderShopCartPage = new WonderShopCartPage();
             findElementByAndroidUIAutomator.findElementByContentDesc("XM Test Chips & Salsa_cart_item");
+            Thread.sleep(1000);
             wonderShopCartPage.clickBack();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
     }
 
     @Test
-    public void findButtonOnCheckoutPage() {
+    public void findButtonOnCheckoutPage() throws InterruptedException {
         findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
         findElementByAndroidUIAutomator.setCount(1);
         WonderHomePage wonderHomePage = new WonderHomePage();
@@ -137,26 +137,27 @@ public class TestFindElementByAndroidUIAutomatorDesc {
             wonderShopCartPage.clickCheckoutButton();
             WonderCheckoutPage checkoutPage = new WonderCheckoutPage();
             findElementByAndroidUIAutomator.findElementByContentDesc("address_delivery_instructions");
+            Thread.sleep(1000);
             checkoutPage.clickBack();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
 
     }
 
-    @Test
-    public void findPickupButtonOnEnvoyRLP() {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        for (int i = 0; i < loopCount; i++) {
-            WonderHomePage wonderHomePage = new WonderHomePage();
-            wonderHomePage.clickEnvoy();
-            EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-            findElementByAndroidUIAutomator.findElementByContentDesc("pickup_button_on_home_page");
-            envoyHomePage.clickWonderTab();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
-
-    }
+//    @Test
+//    public void findPickupButtonOnEnvoyRLP() {
+//        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
+//        findElementByAndroidUIAutomator.setCount(1);
+//        for (int i = 0; i < loopCount; i++) {
+//            WonderHomePage wonderHomePage = new WonderHomePage();
+//            wonderHomePage.clickEnvoy();
+//            EnvoyHomePage envoyHomePage = new EnvoyHomePage();
+//            findElementByAndroidUIAutomator.findElementByContentDesc("pickup_button_on_home_page");
+//            envoyHomePage.clickWonderTab();
+//        }
+//        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+//
+//    }
 
     @Test
     public void findBurgersOnEnvoyRLP() {

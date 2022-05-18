@@ -26,7 +26,7 @@ import org.testng.annotations.Test;
 /**
  * @author niki
  */
-public class TestFindElementByAndroidUIAutomatorText {
+public class TestFindElementByAndroidUIAutomatorMix {
     public String email = "nikisun@chancetop.com";
     public String password = "pwd11111";
     public AppiumDriver<MobileElement> driver;
@@ -53,7 +53,7 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator.setCount(1);
         for (int i = 0; i < loopCount; i++) {
             WonderHomePage wonderHomePage = new WonderHomePage();
-            findElementByAndroidUIAutomator.findElementByText("Wonder");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().className(\"android.view.View\").description(\"wonder_on_home_page\")");
             driver.closeApp();
             driver.launchApp();
         }
@@ -66,7 +66,8 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator.setCount(1);
         for (int i = 0; i < loopCount; i++) {
             WonderHomePage wonderHomePage = new WonderHomePage();
-            findElementByAndroidUIAutomator.findElementByText("XM Test Automation Use ONLY");
+//            findElementByAndroidUIAutomator.findElement("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"), \"App Automation Use ONLY\")");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().className(\"android.view.ViewGroup\").descriptionContains(\"App Automation Use\")");
             driver.closeApp();
             driver.launchApp();
         }
@@ -79,10 +80,10 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator.setCount(1);
         for (int i = 0; i < loopCount; i++) {
             WonderHomePage wonderHomePage = new WonderHomePage();
-            wonderHomePage.clickRestaurant("XM Test Automation Use ONLY");
+            wonderHomePage.clickRestaurant("XM Test App Automation Use ONLY");
             Thread.sleep(5000);
             BaseUtils.swipeToUp(0.4, 2, 1000);
-            findElementByAndroidUIAutomator.findElementByText("Crispy on the outside. Tender, juicy, organic white meat on the inside");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().className(\"android.widget.TextView\").text(\"XM Test Chips & Salsa\")");
             new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("back_button_on_restaurant_detail_page"))).click();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
@@ -93,18 +94,19 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
         findElementByAndroidUIAutomator.setCount(1);
         WonderHomePage wonderHomePage = new WonderHomePage();
-        wonderHomePage.clickRestaurant("XM Test Automation Use ONLY");
+        wonderHomePage.clickRestaurant("XM Test App Automation Use ONLY");
+        Thread.sleep(5000);
         BaseUtils.swipeToUp(0.4, 2, 1000);
         WonderRestaurantDetailPage wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
         wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");
         WonderMealDetailPage mealDetailPage = new WonderMealDetailPage();
-        findElementByAndroidUIAutomator.findElementByText("ADD — $33.00");
+        findElementByAndroidUIAutomator.findElement("new UiSelector().className(\"android.widget.TextView\").text(\"take it button\")");
         mealDetailPage.clickBack();
         for (int i = 0; i < loopCount - 1; i++) {
             wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
             wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");
             mealDetailPage = new WonderMealDetailPage();
-            findElementByAndroidUIAutomator.findElementByText("ADD — $33.00");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().className(\"android.widget.TextView\").text(\"take it button\")");
             Thread.sleep(1000);
             mealDetailPage.clickBack();
         }
@@ -119,7 +121,8 @@ public class TestFindElementByAndroidUIAutomatorText {
             WonderHomePage wonderHomePage = new WonderHomePage();
             wonderHomePage.clickViewOrder();
             WonderShopCartPage wonderShopCartPage = new WonderShopCartPage();
-            findElementByAndroidUIAutomator.findElementByText("XM Test Chips & Salsa");
+//            findElementByAndroidUIAutomator.findElement("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"), \"XM Test Chips & Salsa\")");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().className(\"android.widget.TextView\").text(\"XM Test Chips & Salsa\")");
             Thread.sleep(1000);
             wonderShopCartPage.clickBack();
         }
@@ -136,12 +139,12 @@ public class TestFindElementByAndroidUIAutomatorText {
             WonderShopCartPage wonderShopCartPage = new WonderShopCartPage();
             wonderShopCartPage.clickCheckoutButton();
             WonderCheckoutPage checkoutPage = new WonderCheckoutPage();
-            findElementByAndroidUIAutomator.findElementByText("Add delivery instructions");
+//            findElementByAndroidUIAutomator.findElement("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"), \"Add delivery instructions\")");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().description(\"address_delivery_instructions\").text(\"Add delivery instructions\")");
             Thread.sleep(1000);
             checkoutPage.clickBack();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
-
     }
 
 //    @Test
@@ -152,10 +155,11 @@ public class TestFindElementByAndroidUIAutomatorText {
 //            WonderHomePage wonderHomePage = new WonderHomePage();
 //            wonderHomePage.clickEnvoy();
 //            EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-//            findElementByAndroidUIAutomator.findElementByText("PICKUP");
+//            findElementByAndroidUIAutomator.findElementByContentDesc("pickup_button_on_home_page");
 //            envoyHomePage.clickWonderTab();
 //        }
 //        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+//
 //    }
 
     @Test
@@ -166,7 +170,8 @@ public class TestFindElementByAndroidUIAutomatorText {
             WonderHomePage wonderHomePage = new WonderHomePage();
             wonderHomePage.clickEnvoy();
             EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-            findElementByAndroidUIAutomator.findElementByText("Burgers");
+//            findElementByAndroidUIAutomator.findElement("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"), \"Burgers\")");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().text(\"Burgers\").descriptionStartsWith(\"Burgers\")");
             envoyHomePage.clickWonderTab();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
@@ -179,11 +184,14 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator.setCount(1);
         WonderHomePage wonderHomePage = new WonderHomePage();
         wonderHomePage.clickEnvoy();
+        EnvoyHomePage envoyHomePage = new EnvoyHomePage();
+        BaseUtils.swipeToUp(0.3, 1, 1000);
         for (int i = 0; i < loopCount; i++) {
-            EnvoyHomePage envoyHomePage = new EnvoyHomePage();
+            envoyHomePage = new EnvoyHomePage();
             envoyHomePage.clickRestaurant("Closed - Marketplace Automation USE ONLY");
             EnvoyRestaurantDetailPage envoyRestaurantDetailPage = new EnvoyRestaurantDetailPage();
-            findElementByAndroidUIAutomator.findElementByText("117 N Union Ave, Cranford, NJ, 07016");
+//            findElementByAndroidUIAutomator.findElement("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"), \"117 N Union Ave, Cranford, NJ, 07016\")");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().className(\"android.widget.TextView\").description(\"address_on_mkp_rlp_page\")");
             envoyRestaurantDetailPage.clickBack();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));

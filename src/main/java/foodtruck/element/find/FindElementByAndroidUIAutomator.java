@@ -65,4 +65,7 @@ public class FindElementByAndroidUIAutomator extends FindElement {
         return findElement(MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"%s\")", text)));
     }
 
+    public MobileElement findElement(String uiautomatorText) {
+        return findElement(MobileBy.AndroidUIAutomator(uiautomatorText));
+    }
 }
