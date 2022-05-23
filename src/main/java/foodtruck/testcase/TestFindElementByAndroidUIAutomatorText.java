@@ -12,6 +12,7 @@ import foodtruck.pages.WonderRestaurantDetailPage;
 import foodtruck.pages.WonderShopCartPage;
 import foodtruck.properties.SysProperties;
 import foodtruck.util.BaseUtils;
+import foodtruck.util.Constant;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
@@ -66,7 +67,8 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator.setCount(1);
         for (int i = 0; i < loopCount; i++) {
             WonderHomePage wonderHomePage = new WonderHomePage();
-            findElementByAndroidUIAutomator.findElementByText("XM Test Automation Use ONLY");
+            findElementByAndroidUIAutomator.findElement("new UiSelector().textContains(\"App Automation Use ONLY\")");
+//            findElementByAndroidUIAutomator.findElementByText(Constant.RESTAURANT);
             driver.closeApp();
             driver.launchApp();
         }
@@ -79,10 +81,10 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator.setCount(1);
         for (int i = 0; i < loopCount; i++) {
             WonderHomePage wonderHomePage = new WonderHomePage();
-            wonderHomePage.clickRestaurant("XM Test Automation Use ONLY");
+            wonderHomePage.clickRestaurant(Constant.RESTAURANT);
             Thread.sleep(5000);
             BaseUtils.swipeToUp(0.4, 2, 1000);
-            findElementByAndroidUIAutomator.findElementByText("Crispy on the outside. Tender, juicy, organic white meat on the inside");
+            findElementByAndroidUIAutomator.findElementByText("XM Test Chips & Salsa");
             new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("back_button_on_restaurant_detail_page"))).click();
         }
         System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
@@ -93,7 +95,7 @@ public class TestFindElementByAndroidUIAutomatorText {
         findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
         findElementByAndroidUIAutomator.setCount(1);
         WonderHomePage wonderHomePage = new WonderHomePage();
-        wonderHomePage.clickRestaurant("XM Test Automation Use ONLY");
+        wonderHomePage.clickRestaurant(Constant.RESTAURANT);
         BaseUtils.swipeToUp(0.4, 2, 1000);
         WonderRestaurantDetailPage wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
         wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");

@@ -6,13 +6,16 @@ import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author niki
  */
 public abstract class FindElement {
     protected final AppiumDriver<MobileElement> driver;
     protected long count = 100;
-    protected long sum = 0;
+    protected List<Long> sum = new ArrayList<>();
 
     protected abstract Logger getLogger();
 
@@ -31,7 +34,7 @@ public abstract class FindElement {
         }
         long avgTime = totalElapsed / count / 1000000;
         getLogger().info("find element average elapsed time = {} ms", avgTime);
-        sum = sum + avgTime;
+        sum.add(avgTime);
         return mobileElement;
     }
 
@@ -40,6 +43,8 @@ public abstract class FindElement {
     }
 
     public long getAvgTime(int loopCount) {
-        return sum / loopCount;
+        Long total = sum.stream().reduce(Long::sum).get();
+        System.out.println(sum);
+        return total/loopCount;
     }
 }
