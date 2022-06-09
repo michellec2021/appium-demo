@@ -41,19 +41,15 @@ public class FindElementByIOSPredicate extends FindElement {
         super(driver);
     }
 
-    public static FindElementByIOSPredicate instance(AppiumDriver<MobileElement> driver) {
-        return new FindElementByIOSPredicate(driver);
+    public void findElement(String selector) {
+        findElement(MobileBy.iOSNsPredicateString(selector));
     }
 
-    public MobileElement findElement(String selector) {
-        return findElement(MobileBy.iOSNsPredicateString(selector));
+    public void findElementByLabel(String label) {
+        findElement(String.format("label == \"%s\"", label));
     }
 
-    public MobileElement findElementByLabel(String label) {
-        return findElement(MobileBy.iOSNsPredicateString(String.format("label == \"%s\"", label)));
-    }
-
-    public MobileElement findElementByName(String name) {
-        return findElement(MobileBy.iOSNsPredicateString(String.format("name == \"%s\"", name)));
+    public void findElementByName(String name) {
+        findElement(String.format("name == \"%s\"", name));
     }
 }

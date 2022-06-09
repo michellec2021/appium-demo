@@ -1,61 +1,61 @@
 package foodtruck.testcase;
 
-import foodtruck.element.find.FindElementByAndroidUIAutomator;
+import foodtruck.element.find.FindElementByAccessibilityId;
 import foodtruck.util.Constant;
 
 /**
  * @author niki
  */
-public class TestFindElementByAndroidUIAutomatorDesc extends TestFindElement<FindElementByAndroidUIAutomator> {
+public class TestFindElementByAccessibilityId extends TestFindElement<FindElementByAccessibilityId>{
 
     @Override
-    protected FindElementByAndroidUIAutomator get() {
-        return new FindElementByAndroidUIAutomator(driver);
+    protected FindElementByAccessibilityId get() {
+        return new FindElementByAccessibilityId(driver);
     }
 
     @Override
-    public void findWonderTab() {
-        t.findElementByContentDesc("wonder_on_home_page");
+    protected void findWonderTab() {
+        t.findElementByAccessibility("wonder_on_home_page");
     }
 
     @Override
-    public void findRestaurantOnWonderRLP() {
-        t.findElementByContentDesc(Constant.RESTAURANT + " restaurant");
+    protected void findRestaurantOnWonderRLP() {
+        t.findElementByAccessibility(Constant.RESTAURANT + " restaurant");
     }
 
     @Override
-    public void findMealOnWonderRDP() {
-        t.findElementByContentDesc("XM Test Chips & Salsa meal");
+    protected void findMealOnWonderRDP() {
+        t.findElementByAccessibility("XM Test Chips & Salsa meal");
     }
 
     @Override
     public void findAddButtonOnWonderMDP() {
-        t.findElementByContentDesc("take it button");
+        t.findElementByAccessibility("take it button");
     }
 
     @Override
     public void findButtonOnShopCartPage() {
-        t.findElementByContentDesc("XM Test Chips & Salsa_cart_item");
+        t.findElementByAccessibility("XM Test Chips & Salsa_cart_item");
     }
 
     @Override
     public void findButtonOnCheckoutPage() {
-        t.findElementByContentDesc("address_delivery_instructions");
+        t.findElementByAccessibility("address_delivery_instructions");
     }
 
     @Override
     public void findPickupButtonOnEnvoyRDP() {
-        t.findElementByContentDesc("PICKUP");
+        t.findElementByAccessibility("PICKUP");
     }
 
     @Override
-    public void findBurgersOnEnvoyRLP() {
-        t.findElementByContentDesc("Burgers_on_home_page");
+    protected void findBurgersOnEnvoyRLP() {
+        t.findElementByAccessibility("Burgers_on_home_page");
     }
 
     @Override
     public void findAddressOnEnvoyRDP() {
-        t.findElementByContentDesc("address_on_mkp_rlp_page");
+        t.findElementByAccessibility("address_on_mkp_rlp_page");
     }
 
     @Override

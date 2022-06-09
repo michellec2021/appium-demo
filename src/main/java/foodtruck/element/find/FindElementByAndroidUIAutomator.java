@@ -53,19 +53,17 @@ public class FindElementByAndroidUIAutomator extends FindElement {
         super(driver);
     }
 
-    public static FindElementByAndroidUIAutomator instance(AppiumDriver<MobileElement> driver) {
-        return new FindElementByAndroidUIAutomator(driver);
+    public void findElement(String uiautomatorText) {
+        findElement(MobileBy.AndroidUIAutomator(uiautomatorText));
     }
 
-    public MobileElement findElementByContentDesc(String contentDesc) {
-        return findElement(MobileBy.AndroidUIAutomator(String.format("new UiSelector().description(\"%s\")", contentDesc)));
+    public void findElementByContentDesc(String contentDesc) {
+        findElement(String.format("new UiSelector().description(\"%s\")", contentDesc));
     }
 
-    public MobileElement findElementByText(String text) {
-        return findElement(MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"%s\")", text)));
+    public void findElementByText(String text) {
+        findElement(String.format("new UiSelector().text(\"%s\")", text));
     }
 
-    public MobileElement findElement(String uiautomatorText) {
-        return findElement(MobileBy.AndroidUIAutomator(uiautomatorText));
-    }
+
 }

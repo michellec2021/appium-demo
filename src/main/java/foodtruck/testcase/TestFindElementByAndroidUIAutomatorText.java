@@ -1,208 +1,104 @@
 package foodtruck.testcase;
 
-import foodtruck.common.DriverInstance;
 import foodtruck.element.find.FindElementByAndroidUIAutomator;
-import foodtruck.helpers.UserLoginHelper;
-import foodtruck.pages.EnvoyHomePage;
-import foodtruck.pages.EnvoyRestaurantDetailPage;
-import foodtruck.pages.WonderCheckoutPage;
-import foodtruck.pages.WonderHomePage;
-import foodtruck.pages.WonderMealDetailPage;
-import foodtruck.pages.WonderRestaurantDetailPage;
-import foodtruck.pages.WonderShopCartPage;
-import foodtruck.properties.SysProperties;
-import foodtruck.util.BaseUtils;
-import foodtruck.util.Constant;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 /**
  * @author niki
  */
-public class TestFindElementByAndroidUIAutomatorText {
-    public String email = "nikisun@chancetop.com";
-    public String password = "pwd11111";
-    public AppiumDriver<MobileElement> driver;
-    public int loopCount;
-    public FindElementByAndroidUIAutomator findElementByAndroidUIAutomator;
+public class TestFindElementByAndroidUIAutomatorText extends TestFindElement<FindElementByAndroidUIAutomator> {
 
-    @BeforeClass
-    public void initFindElement() {
-        loopCount = 20;
-        DriverInstance of = DriverInstance.of();
-        this.driver = of.driver;
-        UserLoginHelper userLoginHelper = new UserLoginHelper();
-        userLoginHelper.validUserLogin(email, password);
+    @Override
+    protected FindElementByAndroidUIAutomator get() {
+        return new FindElementByAndroidUIAutomator(driver);
     }
 
-    @BeforeMethod
-    public void restartApp() {
-        driver.activateApp(SysProperties.BUNDLE_ID);
-    }
-
-    @Test
+    @Override
     public void findWonderTab() {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        for (int i = 0; i < loopCount; i++) {
-            WonderHomePage wonderHomePage = new WonderHomePage();
-            findElementByAndroidUIAutomator.findElementByText("Wonder");
-            driver.closeApp();
-            driver.launchApp();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+        t.findElementByText("Wonder");
     }
 
-    @Test
+    @Override
     public void findRestaurantOnWonderRLP() {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        for (int i = 0; i < loopCount; i++) {
-            WonderHomePage wonderHomePage = new WonderHomePage();
-            findElementByAndroidUIAutomator.findElement("new UiSelector().textContains(\"App Automation Use ONLY\")");
-//            findElementByAndroidUIAutomator.findElementByText(Constant.RESTAURANT);
-            driver.closeApp();
-            driver.launchApp();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+        t.findElement("new UiSelector().textContains(\"App Automation Use ONLY\")");
     }
 
-    @Test
-    public void findMealOnWonderRDP() throws InterruptedException {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        for (int i = 0; i < loopCount; i++) {
-            WonderHomePage wonderHomePage = new WonderHomePage();
-            wonderHomePage.clickRestaurant(Constant.RESTAURANT);
-            Thread.sleep(5000);
-            BaseUtils.swipeToUp(0.4, 2, 1000);
-            findElementByAndroidUIAutomator.findElementByText("XM Test Chips & Salsa");
-            new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId("back_button_on_restaurant_detail_page"))).click();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+    @Override
+    public void findMealOnWonderRDP() {
+        t.findElementByText("XM Test Chips & Salsa");
     }
 
-    @Test
-    public void findAddButtonOnWonderMDP() throws InterruptedException {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        WonderHomePage wonderHomePage = new WonderHomePage();
-        wonderHomePage.clickRestaurant(Constant.RESTAURANT);
-        BaseUtils.swipeToUp(0.4, 2, 1000);
-        WonderRestaurantDetailPage wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
-        wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");
-        WonderMealDetailPage mealDetailPage = new WonderMealDetailPage();
-        findElementByAndroidUIAutomator.findElementByText("ADD — $33.00");
-        mealDetailPage.clickBack();
-        for (int i = 0; i < loopCount - 1; i++) {
-            wonderRestaurantDetailPage = new WonderRestaurantDetailPage();
-            wonderRestaurantDetailPage.clickMeal("XM Test Chips & Salsa");
-            mealDetailPage = new WonderMealDetailPage();
-            findElementByAndroidUIAutomator.findElementByText("ADD — $33.00");
-            Thread.sleep(1000);
-            mealDetailPage.clickBack();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+    @Override
+    public void findAddButtonOnWonderMDP() {
+        t.findElementByText("ADD — $33.00");
     }
 
-    @Test
-    public void findButtonOnShopCartPage() throws InterruptedException {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        for (int i = 0; i < loopCount; i++) {
-            WonderHomePage wonderHomePage = new WonderHomePage();
-            wonderHomePage.clickViewOrder();
-            WonderShopCartPage wonderShopCartPage = new WonderShopCartPage();
-            findElementByAndroidUIAutomator.findElementByText("XM Test Chips & Salsa");
-            Thread.sleep(1000);
-            wonderShopCartPage.clickBack();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+    @Override
+    public void findButtonOnShopCartPage() {
+        t.findElementByText("XM Test Chips & Salsa");
     }
 
-    @Test
-    public void findButtonOnCheckoutPage() throws InterruptedException {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        WonderHomePage wonderHomePage = new WonderHomePage();
-        wonderHomePage.clickViewOrder();
-        for (int i = 0; i < loopCount; i++) {
-            WonderShopCartPage wonderShopCartPage = new WonderShopCartPage();
-            wonderShopCartPage.clickCheckoutButton();
-            WonderCheckoutPage checkoutPage = new WonderCheckoutPage();
-            findElementByAndroidUIAutomator.findElementByText("Add delivery instructions");
-            Thread.sleep(1000);
-            checkoutPage.clickBack();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
-
+    @Override
+    public void findButtonOnCheckoutPage() {
+        t.findElementByText("Add delivery instructions");
     }
 
-//    @Test
-//    public void findPickupButtonOnEnvoyRLP() {
-//        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-//        findElementByAndroidUIAutomator.setCount(1);
-//        for (int i = 0; i < loopCount; i++) {
-//            WonderHomePage wonderHomePage = new WonderHomePage();
-//            wonderHomePage.clickEnvoy();
-//            EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-//            findElementByAndroidUIAutomator.findElementByText("PICKUP");
-//            envoyHomePage.clickWonderTab();
-//        }
-//        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
-//    }
+    @Override
+    public void findPickupButtonOnEnvoyRDP() {
+        t.findElementByText("PICKUP");
+    }
 
-    @Test
+    @Override
     public void findBurgersOnEnvoyRLP() {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        for (int i = 0; i < loopCount; i++) {
-            WonderHomePage wonderHomePage = new WonderHomePage();
-            wonderHomePage.clickEnvoy();
-            EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-            findElementByAndroidUIAutomator.findElementByText("Burgers");
-            envoyHomePage.clickWonderTab();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
-
+        t.findElementByText("Burgers");
     }
 
-    @Test
+    @Override
     public void findAddressOnEnvoyRDP() {
-        findElementByAndroidUIAutomator = FindElementByAndroidUIAutomator.instance(driver);
-        findElementByAndroidUIAutomator.setCount(1);
-        WonderHomePage wonderHomePage = new WonderHomePage();
-        wonderHomePage.clickEnvoy();
-        for (int i = 0; i < loopCount; i++) {
-            EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-            envoyHomePage.clickRestaurant("Closed - Marketplace Automation USE ONLY");
-            EnvoyRestaurantDetailPage envoyRestaurantDetailPage = new EnvoyRestaurantDetailPage();
-            findElementByAndroidUIAutomator.findElementByText("117 N Union Ave, Cranford, NJ, 07016");
-            envoyRestaurantDetailPage.clickBack();
-        }
-        System.out.println(findElementByAndroidUIAutomator.getAvgTime(loopCount));
+        t.findElementByText("117 N Union Ave, Cranford, NJ, 07016");
     }
 
-    @AfterMethod
-    public void terminalApp() {
-        if (driver != null) {
-            driver.terminateApp(SysProperties.BUNDLE_ID);
-        }
+    @Override
+    public void testFindWonderTab() {
+        super.testFindWonderTab();
     }
 
-    @AfterClass
-    public void removeApp() {
-        if (driver != null) {
-            driver.removeApp(SysProperties.BUNDLE_ID);
-        }
+    @Override
+    public void testFindRestaurantOnWonderRLP() {
+        super.testFindRestaurantOnWonderRLP();
     }
 
+    @Override
+    public void testFindMealOnWonderRDP() throws InterruptedException {
+        super.testFindMealOnWonderRDP();
+    }
+
+    @Override
+    public void testFindAddButtonOnWonderMDP() throws InterruptedException {
+        super.testFindAddButtonOnWonderMDP();
+    }
+
+    @Override
+    public void testFindButtonOnShopCartPage() {
+        super.testFindButtonOnShopCartPage();
+    }
+
+    @Override
+    public void testFindButtonOnCheckoutPage() {
+        super.testFindButtonOnCheckoutPage();
+    }
+
+    @Override
+    public void testFindPickupButtonOnEnvoyRDP() {
+        super.testFindPickupButtonOnEnvoyRDP();
+    }
+
+    @Override
+    public void testFindBurgersOnEnvoyRLP() {
+        super.testFindBurgersOnEnvoyRLP();
+    }
+
+    @Override
+    public void testFindAddressOnEnvoyRDP() {
+        super.testFindAddressOnEnvoyRDP();
+    }
 }
