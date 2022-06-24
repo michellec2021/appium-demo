@@ -49,13 +49,47 @@ public class TestFindElementByCurrentCurrentStrategy extends TestFindElement<Fin
     }
 
     @Override
-    public void findBurgersOnEnvoyRLP() {
-        t.findElementByAccessibility("Burgers_on_home_page");
-    }
-
-    @Override
     public void findAddressOnEnvoyRDP() {
         t.findElementByAccessibility("address_on_mkp_rlp_page");
     }
 
+    @Override
+    public void testFindWonderTab() {
+        super.testFindWonderTab();
+    }
+
+    @Override
+    public void testFindRestaurantOnWonderRLP() {
+        super.testFindRestaurantOnWonderRLP();
+    }
+
+    @Override
+    public void testFindMealOnWonderRDP() throws InterruptedException {
+        super.testFindMealOnWonderRDP();
+    }
+
+    @Override
+    public void testFindAddButtonOnWonderMDP() throws InterruptedException {
+        super.testFindAddButtonOnWonderMDP();
+    }
+
+    @Override
+    public void testFindButtonOnShopCartPage() {
+        super.testFindButtonOnShopCartPage();
+    }
+
+    @Override
+    public void testFindButtonOnCheckoutPage() {
+        super.testFindButtonOnCheckoutPage();
+    }
+
+    @Override
+    public void testFindPickupButtonOnEnvoyRDP() {
+        super.testFindPickupButtonOnEnvoyRDP();
+    }
+
+    @Override
+    public void testFindAddressOnEnvoyRDP() {
+        super.testFindAddressOnEnvoyRDP();
+    }
 }

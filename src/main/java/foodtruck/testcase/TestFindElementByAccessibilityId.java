@@ -49,11 +49,6 @@ public class TestFindElementByAccessibilityId extends TestFindElement<FindElemen
     }
 
     @Override
-    protected void findBurgersOnEnvoyRLP() {
-        t.findElementByAccessibility("Burgers_on_home_page");
-    }
-
-    @Override
     public void findAddressOnEnvoyRDP() {
         t.findElementByAccessibility("address_on_mkp_rlp_page");
     }
@@ -91,11 +86,6 @@ public class TestFindElementByAccessibilityId extends TestFindElement<FindElemen
     @Override
     public void testFindPickupButtonOnEnvoyRDP() {
         super.testFindPickupButtonOnEnvoyRDP();
-    }
-
-    @Override
-    public void testFindBurgersOnEnvoyRLP() {
-        super.testFindBurgersOnEnvoyRLP();
     }
 
     @Override

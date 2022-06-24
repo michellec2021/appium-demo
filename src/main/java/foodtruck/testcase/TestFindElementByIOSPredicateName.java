@@ -1,9 +1,7 @@
 package foodtruck.testcase;
 
 import foodtruck.element.find.FindElementByIOSPredicate;
-import foodtruck.properties.SysProperties;
 import foodtruck.util.Constant;
-import org.testng.annotations.AfterMethod;
 
 /**
  * @author niki
@@ -12,7 +10,7 @@ public class TestFindElementByIOSPredicateName extends TestFindElement<FindEleme
 
     @Override
     protected FindElementByIOSPredicate get() {
-        return null;
+        return new FindElementByIOSPredicate(driver);
     }
 
     @Override
@@ -51,19 +49,7 @@ public class TestFindElementByIOSPredicateName extends TestFindElement<FindEleme
     }
 
     @Override
-    public void findBurgersOnEnvoyRLP() {
-        t.findElementByName("Burgers_on_home_page");
-    }
-
-    @Override
     public void findAddressOnEnvoyRDP() {
         t.findElementByName("address_on_mkp_rlp_page");
-    }
-
-    @AfterMethod
-    public void terminalApp() {
-        if (driver != null) {
-            driver.terminateApp(SysProperties.BUNDLE_ID);
-        }
     }
 }

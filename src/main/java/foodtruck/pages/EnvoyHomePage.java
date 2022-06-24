@@ -26,11 +26,6 @@ public class EnvoyHomePage extends BasePage {
     }
 
     public void clickRestaurant(String restaurantName) {
-        driverLongWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(restaurantName + "_under_Burgers"))).click();
-//        driver.findElementByAccessibilityId(restaurantName + "_under_Burgers").click();
-    }
-
-    public void clickRestaurant(String restaurantName, String cuisine) {
-        driverLongWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(restaurantName + "_under_" + cuisine))).click();
+        driverLongWait.until(ExpectedConditions.visibilityOfElementLocated(MobileBy.AccessibilityId(restaurantName + "_on_home_page"))).click();
     }
 }

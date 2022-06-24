@@ -48,13 +48,8 @@ public class TestFindElementByAndroidUIAutomatorText extends TestFindElement<Fin
     }
 
     @Override
-    public void findBurgersOnEnvoyRLP() {
-        t.findElementByText("Burgers");
-    }
-
-    @Override
     public void findAddressOnEnvoyRDP() {
-        t.findElementByText("117 N Union Ave, Cranford, NJ, 07016");
+        t.findElementByText("411 Lafayette Ave, Cliffside Park, NJ, 07010");
     }
 
     @Override
@@ -90,11 +85,6 @@ public class TestFindElementByAndroidUIAutomatorText extends TestFindElement<Fin
     @Override
     public void testFindPickupButtonOnEnvoyRDP() {
         super.testFindPickupButtonOnEnvoyRDP();
-    }
-
-    @Override
-    public void testFindBurgersOnEnvoyRLP() {
-        super.testFindBurgersOnEnvoyRLP();
     }
 
     @Override

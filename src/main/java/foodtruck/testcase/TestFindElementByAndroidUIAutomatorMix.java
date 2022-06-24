@@ -48,11 +48,6 @@ public class TestFindElementByAndroidUIAutomatorMix extends TestFindElement<Find
     }
 
     @Override
-    public void findBurgersOnEnvoyRLP() {
-        t.findElement("new UiSelector().text(\"Burgers\").descriptionStartsWith(\"Burgers\")");
-    }
-
-    @Override
     public void findAddressOnEnvoyRDP() {
         t.findElement("new UiSelector().className(\"android.widget.TextView\").description(\"address_on_mkp_rlp_page\")");
     }
@@ -90,11 +85,6 @@ public class TestFindElementByAndroidUIAutomatorMix extends TestFindElement<Find
     @Override
     public void testFindPickupButtonOnEnvoyRDP() {
         super.testFindPickupButtonOnEnvoyRDP();
-    }
-
-    @Override
-    public void testFindBurgersOnEnvoyRLP() {
-        super.testFindBurgersOnEnvoyRLP();
     }
 
     @Override

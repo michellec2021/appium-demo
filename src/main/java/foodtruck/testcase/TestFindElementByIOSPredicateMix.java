@@ -48,12 +48,47 @@ public class TestFindElementByIOSPredicateMix extends TestFindElement<FindElemen
     }
 
     @Override
-    public void findBurgersOnEnvoyRLP() {
-        t.findElement("label == \"Burgers\" AND name == \"Burgers_on_home_page\"");
+    public void findAddressOnEnvoyRDP() {
+        t.findElement("label == \"411 Lafayette Ave, Cliffside Park, NJ, 07010\" AND name == \"address_on_mkp_rlp_page\"");
     }
 
     @Override
-    public void findAddressOnEnvoyRDP() {
-        t.findElement("label == \"117 N Union Ave, Cranford, NJ, 07016\" AND name == \"address_on_mkp_rlp_page\"");
+    public void testFindWonderTab() {
+        super.testFindWonderTab();
+    }
+
+    @Override
+    public void testFindRestaurantOnWonderRLP() {
+        super.testFindRestaurantOnWonderRLP();
+    }
+
+    @Override
+    public void testFindMealOnWonderRDP() throws InterruptedException {
+        super.testFindMealOnWonderRDP();
+    }
+
+    @Override
+    public void testFindAddButtonOnWonderMDP() throws InterruptedException {
+        super.testFindAddButtonOnWonderMDP();
+    }
+
+    @Override
+    public void testFindButtonOnShopCartPage() {
+        super.testFindButtonOnShopCartPage();
+    }
+
+    @Override
+    public void testFindButtonOnCheckoutPage() {
+        super.testFindButtonOnCheckoutPage();
+    }
+
+    @Override
+    public void testFindPickupButtonOnEnvoyRDP() {
+        super.testFindPickupButtonOnEnvoyRDP();
+    }
+
+    @Override
+    public void testFindAddressOnEnvoyRDP() {
+        super.testFindAddressOnEnvoyRDP();
     }
 }

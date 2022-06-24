@@ -82,6 +82,7 @@ public abstract class TestFindElement<T extends FindElement> {
     protected abstract void findMealOnWonderRDP();
 
     @Test(invocationCount = 100)
+//    @Test
     public void testFindMealOnWonderRDP() throws InterruptedException {
         if (Objects.equals(SysProperties.DEVICE_OS, "android")) {
             t.setCount(1);
@@ -94,6 +95,7 @@ public abstract class TestFindElement<T extends FindElement> {
         if (Objects.equals(SysProperties.DEVICE_OS, "android")) {
             sum.add(t.getAvgTime());
             System.out.println(sum);
+            System.out.println(sum.stream().reduce(Long::sum).get()/sum.size());
         }
     }
 
@@ -140,21 +142,21 @@ public abstract class TestFindElement<T extends FindElement> {
         WonderHomePage wonderHomePage = new WonderHomePage();
         wonderHomePage.clickEnvoy();
         EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-        BaseUtils.swipeToUp(0.3, 1, 1000);
-        envoyHomePage.clickRestaurant("Automation USE ONLY Marketplace", "Chinese");
+        BaseUtils.swipeToUp(0.6, 1, 1000);
+        envoyHomePage.clickRestaurant("Automation USE ONLY Marketplace");
         EnvoyRestaurantDetailPage envoyRestaurantDetailPage = new EnvoyRestaurantDetailPage();
         findPickupButtonOnEnvoyRDP();
     }
 
-    protected abstract void findBurgersOnEnvoyRLP();
-
-    @Test
-    public void testFindBurgersOnEnvoyRLP() {
-        WonderHomePage wonderHomePage = new WonderHomePage();
-        wonderHomePage.clickEnvoy();
-        EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-        findBurgersOnEnvoyRLP();
-    }
+//    protected abstract void findBurgersOnEnvoyRLP();
+//
+//    @Test
+//    public void testFindEnvoyRestaurantOnEnvoyRLP() {
+//        WonderHomePage wonderHomePage = new WonderHomePage();
+//        wonderHomePage.clickEnvoy();
+//        EnvoyHomePage envoyHomePage = new EnvoyHomePage();
+//        findBurgersOnEnvoyRLP();
+//    }
 
     protected abstract void findAddressOnEnvoyRDP();
 
@@ -163,8 +165,8 @@ public abstract class TestFindElement<T extends FindElement> {
         WonderHomePage wonderHomePage = new WonderHomePage();
         wonderHomePage.clickEnvoy();
         EnvoyHomePage envoyHomePage = new EnvoyHomePage();
-        BaseUtils.swipeToUp(0.3, 1, 1000);
-        envoyHomePage.clickRestaurant("Closed - Marketplace Automation USE ONLY");
+        BaseUtils.swipeToUp(0.5, 1, 1000);
+        envoyHomePage.clickRestaurant("Automation USE ONLY Marketplace");
         EnvoyRestaurantDetailPage envoyRestaurantDetailPage = new EnvoyRestaurantDetailPage();
         findAddressOnEnvoyRDP();
     }

@@ -49,11 +49,6 @@ public class TestFindElementByAndroidUIAutomatorDesc extends TestFindElement<Fin
     }
 
     @Override
-    public void findBurgersOnEnvoyRLP() {
-        t.findElementByContentDesc("Burgers_on_home_page");
-    }
-
-    @Override
     public void findAddressOnEnvoyRDP() {
         t.findElementByContentDesc("address_on_mkp_rlp_page");
     }
@@ -91,11 +86,6 @@ public class TestFindElementByAndroidUIAutomatorDesc extends TestFindElement<Fin
     @Override
     public void testFindPickupButtonOnEnvoyRDP() {
         super.testFindPickupButtonOnEnvoyRDP();
-    }
-
-    @Override
-    public void testFindBurgersOnEnvoyRLP() {
-        super.testFindBurgersOnEnvoyRLP();
     }
 
     @Override
