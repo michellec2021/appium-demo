@@ -1,9 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2022-09-19T10:42:52.175Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="XPdW8b2rf99n3a6kECqP" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-21T10:12:48.325Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="6_iUa7MVwhAuzewEoxG5" version="20.2.7" type="github">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
-    <mxGraphModel dx="2493" dy="1970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1666" dy="1833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="BozA1D83keZiOcj3SNHo-54" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1130" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-40" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1140" width="550" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-32" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="680" y="745" width="710" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-27" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry y="745" width="490" height="140" as="geometry" />
+        </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YXr3nUFCG6cjJ5tYE9rC-6" target="YXr3nUFCG6cjJ5tYE9rC-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -49,23 +61,20 @@
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-13" value="Run Test Plan" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1030" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YXr3nUFCG6cjJ5tYE9rC-14" value="问题：&lt;br&gt;Envoy和Wonder要分开吗？&lt;br&gt;4. Test分级（Test Plan/User Story/Statement）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-40" y="450" width="220" height="30" as="geometry" />
+        <mxCell id="YXr3nUFCG6cjJ5tYE9rC-14" value="问题：&lt;br&gt;1. Envoy和Wonder要分开吗？（它们的前置条件是一样的，只是操作app上的功能不一样，感觉没必要分开）&lt;br&gt;2. Test分级（Test Plan/User Story/Statement）&lt;br&gt;3.Upgrade 和API测试要不要分开？？（升级的前置条件没有默认安装app，API测试没有启动device）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry y="470" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-23" value="&lt;h2 style=&quot;margin: 0px; padding: 0px; font-size: 1.43em; line-height: 1.2; color: rgb(23, 43, 77); font-weight: 500; letter-spacing: -0.008em; border-bottom-color: rgb(204, 204, 204); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot; data-renderer-start-pos=&quot;1&quot; id=&quot;1.-Choose-Profile,-filter-test-case-and-devices&quot;&gt;Choose Profile, filter test case and devices&lt;/h2&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
-          <mxGeometry x="-10" y="-170" width="400" height="40" as="geometry" />
+          <mxGeometry y="-190" width="400" height="40" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-26" value="&lt;div&gt;env&lt;br&gt;&lt;/div&gt;&lt;div&gt;mparticle.enableUploadEvent&lt;br&gt;&lt;/div&gt;&lt;div&gt;enableSftpReport&lt;br&gt;&lt;/div&gt;&lt;div&gt;appiumServerPort&lt;br&gt;&lt;/div&gt;&lt;div&gt;appPath&lt;br&gt;&lt;/div&gt;&lt;div&gt;reportRootFolderName&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;iosRealDevice.udid&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;setProfile(测试的账号)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;enableUploadAllureReport&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;device&lt;/div&gt;&lt;div&gt;isUpgradeTest?&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
-          <mxGeometry x="145" y="220" width="190" height="180" as="geometry" />
+          <mxGeometry x="170" y="200" width="190" height="180" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="YXr3nUFCG6cjJ5tYE9rC-14" target="YXr3nUFCG6cjJ5tYE9rC-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YXr3nUFCG6cjJ5tYE9rC-31" value="&lt;b&gt;Priority&lt;/b&gt;: Critical/High/Medium/Low(必填，单选)&lt;br&gt;&lt;b&gt;Business Line&lt;/b&gt;: Wonder/Envoy/RP&lt;br&gt;&lt;b&gt;Group&lt;/b&gt;:Alcohol/Small Order Delivery Fee/Post Release Test/Bundle/RP/Deeplink/Checkout/UI diff(必填，多选，后续会增加)&lt;br&gt;&lt;b&gt;Type&lt;/b&gt;: Functional/UI/API(必填，单选)&lt;br&gt;Functional为功能测试，跟兼容性无关，在本地测试，无需在appcenter执行；&lt;br&gt;UI为需要在appcenter上执行的脚本；&lt;br&gt;API为接口测试&lt;br&gt;&lt;b&gt;Story&lt;/b&gt;: 对应功能测试用例的Test Purpose" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
-          <mxGeometry x="430" y="-180" width="270" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="YXr3nUFCG6cjJ5tYE9rC-32" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;SMOKE&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;UI_TEST&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;NO_UI_TEST&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;FUNCTIONAL_TEST&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;INITIATION&lt;/span&gt;,&lt;br&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;ORDER&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;SHOP_CART&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;CHECKOUT&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;DINNER_RUSH&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;INVENTORY&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;ALLERGENS&lt;/span&gt;,&lt;br&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;FULL_SCREENSHOT&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;UPGRADE_TEST&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;UAT_POST_RELEASE_TEST&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;API_TEST&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;UI_DIFF&lt;/span&gt;,&lt;br&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;RESTAURANT_PORTAL&lt;/span&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-350" y="-50" width="60" height="30" as="geometry" />
+        <mxCell id="YXr3nUFCG6cjJ5tYE9rC-31" value="&lt;b&gt;Priority&lt;/b&gt;: Critical/High/Medium/Low(必填，单选)&lt;br&gt;&lt;b&gt;Business Line&lt;/b&gt;: Wonder/Envoy/RP&lt;br&gt;&lt;b&gt;Group&lt;/b&gt;:Alcohol/Small Order Delivery Fee/Post Release Test/Bundle/Deeplink/Checkout/UI diff/Upgrade Test(必填，多选，后续会增加)&lt;br&gt;&lt;b&gt;Type&lt;/b&gt;: Functional/UI/API(必填，单选)&lt;br&gt;Functional为功能测试，跟兼容性无关，在本地测试，无需在appcenter执行；&lt;br&gt;UI为需要在appcenter上执行的脚本；&lt;br&gt;API为接口测试&lt;br&gt;&lt;b&gt;Story&lt;/b&gt;: 对应功能测试用例的Test Purpose(必填，多选)&lt;br&gt;&lt;b&gt;Locked? &lt;/b&gt;case不能并发(可选)，主要针对修改全局配置的case" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="434.5" y="-210" width="315" height="190" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YXr3nUFCG6cjJ5tYE9rC-34" target="YXr3nUFCG6cjJ5tYE9rC-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -80,7 +89,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-40" value="Priority&lt;br&gt;Group&lt;br&gt;Type&lt;br&gt;Business Line&lt;br&gt;Test Class" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
-          <mxGeometry x="480" y="270" width="100" height="80" as="geometry" />
+          <mxGeometry x="500" y="240" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-41" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.558;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.422;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="YXr3nUFCG6cjJ5tYE9rC-40" target="YXr3nUFCG6cjJ5tYE9rC-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -96,6 +105,129 @@
             <mxPoint x="730" y="230" as="sourcePoint" />
             <mxPoint x="780" y="180" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-2" value="&lt;h2 style=&quot;margin: 0px; padding: 0px; font-size: 1.43em; line-height: 1.2; color: rgb(23, 43, 77); font-weight: 500; letter-spacing: -0.008em; border-bottom-color: rgb(204, 204, 204); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot; data-renderer-start-pos=&quot;1&quot; id=&quot;1.-Choose-Profile,-filter-test-case-and-devices&quot;&gt;Run Test Plan&lt;/h2&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry y="650" width="400" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-5" target="BozA1D83keZiOcj3SNHo-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-5" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Prepare Emulator&lt;/font&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="5" y="785" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-8" target="BozA1D83keZiOcj3SNHo-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-8" value="Connect Appium Server" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="165" y="785" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-9" target="BozA1D83keZiOcj3SNHo-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-9" value="&lt;span style=&quot;color: rgb(50, 50, 50); font-family: 微软雅黑; font-size: 13px; background-color: rgba(255, 255, 255, 0.01);&quot;&gt;initMParticleInfo&lt;/span&gt;&lt;br style=&quot;color: rgb(50, 50, 50); font-family: 微软雅黑; font-size: 13px;&quot;&gt;&lt;span style=&quot;color: rgb(50, 50, 50); font-family: 微软雅黑; font-size: 13px; background-color: rgba(255, 255, 255, 0.01);&quot;&gt;init Test Session&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="345" y="785" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-12" target="BozA1D83keZiOcj3SNHo-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-12" value="Run Test Cases" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="525" y="785" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-13" target="BozA1D83keZiOcj3SNHo-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-13" value="Remove app" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="712" y="785" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-14" target="BozA1D83keZiOcj3SNHo-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-14" value="Disconnect Appium" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="905" y="785" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-15" target="BozA1D83keZiOcj3SNHo-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-15" value="Wait Send Allure Report Finished" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="785" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-16" value="End Test Session" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1285" y="785" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-24" value="&lt;h2 style=&quot;margin: 0px; padding: 0px; font-size: 1.43em; line-height: 1.2; color: rgb(23, 43, 77); font-weight: 500; letter-spacing: -0.008em; border-bottom-color: rgb(204, 204, 204); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot; data-renderer-start-pos=&quot;1&quot; id=&quot;1.-Choose-Profile,-filter-test-case-and-devices&quot;&gt;Run Test Stories&lt;/h2&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry y="1049" width="400" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-25" target="BozA1D83keZiOcj3SNHo-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-25" value="Execute Story One By One" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="5" y="1180" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-28" value="测试场景：本地、appcenter、test server&lt;br&gt;测试平台：IOS、android&lt;br&gt;测试环境：QA、UAT&lt;br&gt;测试业务：Wonder、RP、Envoy&lt;br&gt;测试类型：UI、API、UI Diff、mParticle、Push" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-629" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-29" value="BeforeAllTest" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="855" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-30" value="Appcenter: No TestNG, only Junit(4.9-4.12),Maven&amp;gt;=3.3.9&lt;br&gt;JDK没看到限制，需要再确认" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-629" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-31" value="SaurceLab: 没看到限制&lt;br&gt;可以做功能测试" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="630" y="-629" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-33" value="AfterAllTest" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="710" y="855" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-34" target="BozA1D83keZiOcj3SNHo-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-34" value="Init Allure Service" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-35" target="BozA1D83keZiOcj3SNHo-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-35" value="Init Allure Listener" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-36" value="Precondition这种写法还要吗？用junit怎么实现？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1290" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-37" target="BozA1D83keZiOcj3SNHo-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-37" value="Run Test Preset" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-38" target="BozA1D83keZiOcj3SNHo-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-38" value="Run Test" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="749.5" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=8;" edge="1" parent="1" source="BozA1D83keZiOcj3SNHo-39" target="BozA1D83keZiOcj3SNHo-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-39" value="Run Test Rear" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-49" value="Before Test" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="162.5" y="1260" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-51" value="Test Result Handle" style="rounded=1;whiteSpace=wrap;html=1;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-55" value="After Test" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-56" value="&lt;h2 style=&quot;margin: 0px; padding: 0px; font-size: 1.43em; line-height: 1.2; color: rgb(23, 43, 77); font-weight: 500; letter-spacing: -0.008em; border-bottom-color: rgb(204, 204, 204); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot; data-renderer-start-pos=&quot;1&quot; id=&quot;1.-Choose-Profile,-filter-test-case-and-devices&quot;&gt;Test Result Handle&lt;/h2&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry y="1500" width="400" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-57" value="&lt;br&gt;类的定义：一个类，里面包含多个Test&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1430" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BozA1D83keZiOcj3SNHo-58" value="测试的定义：" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-450" width="270" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
