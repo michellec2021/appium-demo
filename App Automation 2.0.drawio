@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-23T05:50:40.142Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="TIe73sTT3s8BbWLm8dj9" version="20.2.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-09-23T05:57:23.579Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="FQXfNKGZWctrbelrcXIQ" version="20.2.7" type="github" pages="2">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="1186" dy="1657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -32,7 +32,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-8" value="Choose Profile" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="180" y="120" width="120" height="60" as="geometry" />
+          <mxGeometry x="180" y="240" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YXr3nUFCG6cjJ5tYE9rC-9" target="YXr3nUFCG6cjJ5tYE9rC-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -443,9 +443,6 @@
         </mxCell>
         <mxCell id="BozA1D83keZiOcj3SNHo-167" value="Error Handling" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
           <mxGeometry x="1070" y="2080" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="BozA1D83keZiOcj3SNHo-168" value="&lt;h2 style=&quot;margin: 0px; padding: 0px; font-size: 1.43em; line-height: 1.2; color: rgb(23, 43, 77); font-weight: 500; letter-spacing: -0.008em; border-bottom-color: rgb(204, 204, 204); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot; data-renderer-start-pos=&quot;1&quot; id=&quot;1.-Choose-Profile,-filter-test-case-and-devices&quot;&gt;6. Appium Test&lt;/h2&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF2CC;" vertex="1" parent="1">
-          <mxGeometry y="2200" width="400" height="45" as="geometry" />
         </mxCell>
         <mxCell id="BozA1D83keZiOcj3SNHo-176" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="YXr3nUFCG6cjJ5tYE9rC-8" target="YXr3nUFCG6cjJ5tYE9rC-26">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
