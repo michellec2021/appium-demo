@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T06:51:53.811Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="TnrEXmISjOd0mQtzxKgq" version="20.4.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-10-11T07:26:06.951Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="x4-KXX40U7ssqYbiD_w5" version="20.4.0" type="github" pages="3">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="1186" dy="1709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -725,7 +725,7 @@
           <mxGeometry x="100" y="531" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jQ3RC4V0wMdX41KtfTzq-2" value="@&lt;span style=&quot;color: rgb(128, 128, 0); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;BeforeGroup&lt;br&gt;@&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;AfterGroup&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;@BeforeTest&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(255, 255, 255);&quot;&gt;@AfterTest&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(255, 255, 255);&quot;&gt;@Test&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
-          <mxGeometry x="80" y="-70" width="180" height="100" as="geometry" />
+          <mxGeometry x="-350" y="-70" width="180" height="100" as="geometry" />
         </mxCell>
         <mxCell id="jQ3RC4V0wMdX41KtfTzq-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jQ3RC4V0wMdX41KtfTzq-4" target="jQ3RC4V0wMdX41KtfTzq-8">
           <mxGeometry relative="1" as="geometry" />
@@ -913,6 +913,15 @@
         </mxCell>
         <mxCell id="jQ3RC4V0wMdX41KtfTzq-108" value="Run AfterSuite" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="440" y="60" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jQ3RC4V0wMdX41KtfTzq-112" value="beforeTest都是一致的，如果失败了一次需要再次执行吗？？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jQ3RC4V0wMdX41KtfTzq-115" value="问题：当case失败了，重跑是怎样的机制？？？以case为单位还是class" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="50" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jQ3RC4V0wMdX41KtfTzq-116" value="跟测试平台，并发控制" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="120" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
