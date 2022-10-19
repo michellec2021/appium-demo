@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-19T06:23:50.315Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="a-JYlenU3CJvYD1BnSHl" version="20.4.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-10-19T09:59:03.283Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="eVB0RJQDDdBKFyxyG_nb" version="20.4.1" type="github" pages="3">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="1186" dy="1675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -950,6 +950,9 @@
         </mxCell>
         <mxCell id="jQ3RC4V0wMdX41KtfTzq-149" value="测试结果怎么获取？怎么处理测试结果？？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-350" y="70" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LKvsndYqQlfbbcLCxhRr-3" value="思考，失败重跑为什么放在这里，不放在case失败后" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="195" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
