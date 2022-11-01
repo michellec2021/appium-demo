@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-01T06:56:27.769Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="7bao3Qn1XaaZVKn8dgJB" version="20.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-11-01T07:02:34.637Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ktYiG_OxBTaBWmtFfkd8" version="20.5.1" type="github" pages="4">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="1186" dy="1691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1123,13 +1123,13 @@
         <mxCell id="L7fv6TE0IALyO-C3Crww-65" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="L7fv6TE0IALyO-C3Crww-61" target="L7fv6TE0IALyO-C3Crww-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="L7fv6TE0IALyO-C3Crww-61" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;fireTestAssumptionFailed&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="L7fv6TE0IALyO-C3Crww-61" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;fireTest&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;AssumptionFailed&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="850" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="L7fv6TE0IALyO-C3Crww-70" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.008;entryY=0.892;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="L7fv6TE0IALyO-C3Crww-62" target="L7fv6TE0IALyO-C3Crww-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="L7fv6TE0IALyO-C3Crww-62" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;testAssumptionFailure&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="L7fv6TE0IALyO-C3Crww-62" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;testAssumption&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Failure&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="100" y="860" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="L7fv6TE0IALyO-C3Crww-66" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="L7fv6TE0IALyO-C3Crww-64" target="L7fv6TE0IALyO-C3Crww-35">
@@ -1171,7 +1171,7 @@
             <mxPoint x="50" y="1065" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="L7fv6TE0IALyO-C3Crww-80" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;getIgnoredMessage&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="L7fv6TE0IALyO-C3Crww-80" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;getIgnored&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Message&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-70" y="1030" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="L7fv6TE0IALyO-C3Crww-87" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="L7fv6TE0IALyO-C3Crww-86" target="L7fv6TE0IALyO-C3Crww-17">
@@ -1184,6 +1184,9 @@
         </mxCell>
         <mxCell id="L7fv6TE0IALyO-C3Crww-86" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;createTestResult&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-150" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L7fv6TE0IALyO-C3Crww-90" value="主要就四个方法：&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: initial;&quot;&gt;testStarted、&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: initial;&quot;&gt;testFinished、&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: initial;&quot;&gt;testFailure、&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: initial;&quot;&gt;testIgnored&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1100" width="240" height="91" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
