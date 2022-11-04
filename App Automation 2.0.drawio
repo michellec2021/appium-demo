@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-01T07:31:24.710Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="8JWzGwr5g5OcdezXMIo1" version="20.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-11-04T05:46:33.365Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="DEDm8zhttynATWtlwFCi" version="20.5.1" type="github" pages="4">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
-    <mxGraphModel dx="1186" dy="1691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1186" dy="1643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -714,7 +714,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xReArrETFgH4qryFvLwu" name="Run Test">
-    <mxGraphModel dx="2013" dy="1691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2013" dy="1643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -725,7 +725,7 @@
           <mxGeometry x="100" y="531" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jQ3RC4V0wMdX41KtfTzq-2" value="@&lt;span style=&quot;color: rgb(128, 128, 0); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;BeforeGroup&lt;br&gt;@&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;AfterGroup&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;@BeforeTest&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(255, 255, 255);&quot;&gt;@AfterTest&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(255, 255, 255);&quot;&gt;@Test&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 0); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
-          <mxGeometry x="-350" y="-70" width="180" height="100" as="geometry" />
+          <mxGeometry x="-330" y="150" width="180" height="100" as="geometry" />
         </mxCell>
         <mxCell id="jQ3RC4V0wMdX41KtfTzq-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="jQ3RC4V0wMdX41KtfTzq-4" target="jQ3RC4V0wMdX41KtfTzq-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -947,9 +947,6 @@
             <mxPoint x="600" y="220" as="sourcePoint" />
             <mxPoint x="650" y="170" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="jQ3RC4V0wMdX41KtfTzq-149" value="测试结果怎么获取？怎么处理测试结果？？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-350" y="70" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LKvsndYqQlfbbcLCxhRr-3" value="思考，失败重跑为什么放在这里，不放在case失败后" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="370" y="195" width="300" height="30" as="geometry" />
