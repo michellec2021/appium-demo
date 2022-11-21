@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-16T08:44:14.573Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="-m5kQ3LR4tMVkxnqMh6M" version="20.5.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-11-21T04:00:42.636Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="-235FvI0lDTVRVNNSfH7" version="20.5.3" type="github" pages="5">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
-    <mxGraphModel dx="1186" dy="1703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1186" dy="1692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,7 +56,7 @@
           <mxGeometry x="1232" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-14" value="问题：&lt;br&gt;1. Envoy和Wonder要分开吗？（它们的前置条件是一样的，只是操作app上的功能不一样，感觉没必要分开）&lt;br&gt;3.Upgrade 和API测试要不要分开？？（升级的前置条件没有默认安装app，API测试没有启动device）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="30" y="320" width="220" height="30" as="geometry" />
+          <mxGeometry x="20" y="330" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YXr3nUFCG6cjJ5tYE9rC-23" value="&lt;h2 style=&quot;margin: 0px; padding: 0px; font-size: 1.43em; line-height: 1.2; color: rgb(23, 43, 77); font-weight: 500; letter-spacing: -0.008em; border-bottom-color: rgb(204, 204, 204); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start; background-color: rgb(255, 255, 255);&quot; data-renderer-start-pos=&quot;1&quot; id=&quot;1.-Choose-Profile,-filter-test-case-and-devices&quot;&gt;1. Choose Profile, filter test case and devices&lt;/h2&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF2CC;" parent="1" vertex="1">
           <mxGeometry y="-190" width="400" height="40" as="geometry" />
@@ -149,7 +149,7 @@
           <mxGeometry y="1169" width="400" height="45" as="geometry" />
         </mxCell>
         <mxCell id="BozA1D83keZiOcj3SNHo-28" value="测试场景：本地、appcenter、test server&lt;br&gt;测试平台：IOS、android&lt;br&gt;测试环境：QA、UAT&lt;br&gt;测试业务：Wonder、RP、Envoy&lt;br&gt;测试类型：UI、API、UI Diff、mParticle、Push" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=8;" parent="1" vertex="1">
-          <mxGeometry x="20" y="-629" width="240" height="90" as="geometry" />
+          <mxGeometry x="20" y="-629" width="260" height="89" as="geometry" />
         </mxCell>
         <mxCell id="BozA1D83keZiOcj3SNHo-29" value="BeforeAllTest" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" parent="1" vertex="1">
           <mxGeometry x="20" y="855" width="60" height="30" as="geometry" />
@@ -550,7 +550,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="AtWL7tYy1TVO1m6DgpHW" name="第 2 页">
-    <mxGraphModel dx="1186" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1186" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -714,7 +714,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xReArrETFgH4qryFvLwu" name="Run Test">
-    <mxGraphModel dx="2013" dy="1703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2013" dy="1692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -951,13 +951,13 @@
         <mxCell id="LKvsndYqQlfbbcLCxhRr-3" value="思考，失败重跑为什么放在这里，不放在case失败后" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="370" y="195" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Z28ceqkMTaUJxaQAj7Ti-1" value="Retry: run after group后重跑 before group&lt;br&gt;因为不知道BeforeGroup到哪一步，所以要等AfterGroup后再跑" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="Z28ceqkMTaUJxaQAj7Ti-1" value="Retry: run after group后重跑 before group&lt;br&gt;因为不知道BeforeGroup到哪一步，所以要等AfterGroup后再跑" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="400" y="445" width="350" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Z28ceqkMTaUJxaQAj7Ti-2" value="Retry: run AfterTest后重跑BeforeTest&lt;br&gt;因为不知道BeforeTest到哪一步，所以要等AfterTest后再跑" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="Z28ceqkMTaUJxaQAj7Ti-2" value="Retry: run AfterTest后重跑BeforeTest&lt;br&gt;因为不知道BeforeTest到哪一步，所以要等AfterTest后再跑" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="950" y="390" width="330" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Z28ceqkMTaUJxaQAj7Ti-4" value="Retry: 直接重跑Test即可" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="Z28ceqkMTaUJxaQAj7Ti-4" value="Retry: 直接重跑Test即可" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1370" y="490" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
