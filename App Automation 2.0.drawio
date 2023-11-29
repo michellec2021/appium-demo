@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-29T05:59:58.925Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="a8kuZqyAJmpaqhoR2ZqF" version="22.1.4" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-11-29T06:03:06.206Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="C4DxXZOfWap6CzQWv2Oy" version="22.1.4" type="github" pages="9">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="906" dy="1563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1639,6 +1639,12 @@
         <mxCell id="qU-3rKN_sOQIKJZbNfMG-2" value="API Framework" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="450" y="30" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="F5mt9YuQhA97BEkhZWvN-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qU-3rKN_sOQIKJZbNfMG-3" target="qU-3rKN_sOQIKJZbNfMG-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F5mt9YuQhA97BEkhZWvN-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qU-3rKN_sOQIKJZbNfMG-3" target="qU-3rKN_sOQIKJZbNfMG-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="qU-3rKN_sOQIKJZbNfMG-3" value="Common Framework" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="-40" width="120" height="60" as="geometry" />
         </mxCell>
@@ -1655,7 +1661,7 @@
           <mxGeometry x="550" y="210" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="F5mt9YuQhA97BEkhZWvN-4" value="Test Platform" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="-130" y="380" width="840" height="150" as="geometry" />
+          <mxGeometry x="-130" y="380" width="840" height="100" as="geometry" />
         </mxCell>
         <mxCell id="F5mt9YuQhA97BEkhZWvN-6" value="Executors" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-120" y="225" width="60" height="30" as="geometry" />
