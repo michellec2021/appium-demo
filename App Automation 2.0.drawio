@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-29T06:03:06.206Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="C4DxXZOfWap6CzQWv2Oy" version="22.1.4" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-11-29T08:58:56.281Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="qKxZDvNy1ppM-ChoeS5q" version="22.1.4" type="github" pages="9">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="906" dy="1563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1672,11 +1672,71 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="9VlAx1-EgdGT0kdndq1l" name="第 9 页">
-    <mxGraphModel dx="906" dy="394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="9VlAx1-EgdGT0kdndq1l" name="框架功能">
+    <mxGraphModel dx="1733" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-2" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="780" width="640" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-3" value="Common" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="890" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-4" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Test Runner&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="800" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-10" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Log&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="359" y="800" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-11" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Test Case Formater&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="800" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-12" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Http Action&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="860" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-13" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Profile Management&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="359" y="860" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-14" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Generate Allure Report&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="860" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-15" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="920" width="640" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-16" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Appium Action&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="940" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-17" value="App Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-20" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1060" width="640" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-21" value="API Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-23" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Error Handling&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="359" y="940" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-27" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;UI Assertion&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1000" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-28" value="API Assertion" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1090" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-29" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Error Handling&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1090" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-30" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Upload Report&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="860" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-32" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-255" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="frOGIGWRlCBgjJkAZM7Y-34" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Data Driven&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="800" width="110" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
