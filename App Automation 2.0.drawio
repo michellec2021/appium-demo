@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T02:18:46.694Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="ODC0bZK4s3xTU0IvAYrD" version="22.1.5" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-12-12T10:10:48.262Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="g8YT6ZlbJK8hoSBSpQRQ" version="22.1.7" type="github" pages="10">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="906" dy="1562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1737,102 +1737,110 @@
         <mxCell id="frOGIGWRlCBgjJkAZM7Y-34" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;bulletList&amp;quot;,null,&amp;quot;listItem&amp;quot;,null]&quot;&gt;Data Driven&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="650" y="800" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-1" value="Common Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-1" value="Common Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-730" y="120" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-2" value="Test Runner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-2" value="Test Runner" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-660" y="50" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-3" value="Http Action" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-3" value="Http Action" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-660" y="110" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-4" value="Allure Report" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-4" value="Allure Report" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-530" y="50" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-6" value="Case Format" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-6" value="Case Format" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="50" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-7" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-7" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-730" y="160" width="590" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-8" value="App Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-8" value="App Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-730" y="190" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-9" value="Appium Action" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-9" value="Appium Action" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-660" y="180" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-10" value="UI Assertion" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-10" value="UI Assertion" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-270" y="180" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-11" value="UI Error Handling" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-11" value="UI Error Handling" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-530" y="180" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-12" value="Log" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-12" value="Log" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="110" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-13" value="UI Failure Retry" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-13" value="UI Failure Retry" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="180" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-14" value="Profile Management" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-14" value="Profile Management" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-270" y="50" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-15" value="Upload Report" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-15" value="Upload Report" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-270" y="110" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-16" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-16" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-730" y="280" width="590" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-17" value="API Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-17" value="API Framework" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-730" y="350" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-20" value="API Assertion" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-20" value="API Assertion" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-270" y="300" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-21" value="API Error Handling" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-21" value="API Error Handling" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-530" y="300" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-22" value="API Failure Retry" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-22" value="API Failure Retry" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="300" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-23" value="Data Driven" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-23" value="Data Driven" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-530" y="110" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-24" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-24" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-730" y="410" width="590" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-25" value="API Executor Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-25" value="API Executor Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-740" y="445" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-26" value="Cases" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-26" value="Cases" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-523.5" y="435" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-27" value="Auto Value" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-27" value="Auto Value" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-660" y="300" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-28" value="API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-28" value="API" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-400" y="435" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-30" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-30" value="" style="whiteSpace=wrap;html=1;rounded=0;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-730" y="500" width="590" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-31" value="API Executor Interface" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-31" value="API Executor Interface" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-730" y="520" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-33" value="Case Definition" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-33" value="Case Definition" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-500" y="515" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-35" value="Generic business logic" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-35" value="Generic business logic" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-270" y="435" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-39" value="App Preset" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-39" value="App Preset" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-660" y="230" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-40" value="API Preset" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-40" value="API Preset" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-660" y="360" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="uaz8hhG3ofshgLjjpI6Y-41" value="Test Entrance" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="uaz8hhG3ofshgLjjpI6Y-41" value="Test Entrance" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-650" y="435" width="110" height="40" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1azAQE93mXYPMG9L_Rqx" name="DataDriven">
+    <mxGraphModel dx="906" dy="393" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
