@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T08:55:19.306Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="auo0FYrB6dVrS3wt7o_Q" version="22.1.7" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2023-12-14T01:42:40.104Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="UxMe4FkrQ48oIGPjoizd" version="22.1.7" type="github" pages="10">
   <diagram id="PNfna8RPtIPcOBtYApfI" name="第 1 页">
     <mxGraphModel dx="906" dy="1562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1875,7 +1875,7 @@
         <mxCell id="fxaFj1jdqjQxBp-48BX6-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fxaFj1jdqjQxBp-48BX6-5" target="fxaFj1jdqjQxBp-48BX6-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fxaFj1jdqjQxBp-48BX6-5" value="Run Method Case" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="fxaFj1jdqjQxBp-48BX6-5" value="Run TestCaseRunner" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="490" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fxaFj1jdqjQxBp-48BX6-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fxaFj1jdqjQxBp-48BX6-7" target="fxaFj1jdqjQxBp-48BX6-26">
@@ -1925,11 +1925,14 @@
         <mxCell id="fxaFj1jdqjQxBp-48BX6-37" value="结合method的parameters type，转换成对应的参数值Object[] values" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-10" y="872.5" width="110" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="fxaFj1jdqjQxBp-48BX6-39" value="Set Case Name xx+index" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="fxaFj1jdqjQxBp-48BX6-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fxaFj1jdqjQxBp-48BX6-39" target="fxaFj1jdqjQxBp-48BX6-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fxaFj1jdqjQxBp-48BX6-39" value="执行TestCaseRunner(params,i)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="110" y="980" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fxaFj1jdqjQxBp-48BX6-43" value="Report生成和上传要怎么搞？？&lt;br&gt;改变getDescription()里的casename名字，既能改变生成的allure里的文件名。&lt;br&gt;但是上传文件要怎么处理？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="230" y="980" width="470" height="150" as="geometry" />
+        <mxCell id="fxaFj1jdqjQxBp-48BX6-44" value="上传case report(i),需循环获得所有case的Report放一起" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1100" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
