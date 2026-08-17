@@ -21,3 +21,20 @@ dependencies {
     implementation('ch.qos.logback:logback-core:1.2.3')
     implementation('commons-io:commons-io:2.11.0')
 }
+
+jar {
+    archiveBaseName = 'appium-demo'
+    archiveVersion = '1.0-SNAPSHOT'
+    manifest {
+        attributes(
+            'Implementation-Title': 'Appium Demo',
+            'Implementation-Version': archiveVersion,
+            'Built-By': System.getProperty('user.name'),
+            'Built-JDK': System.getProperty('java.version')
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
