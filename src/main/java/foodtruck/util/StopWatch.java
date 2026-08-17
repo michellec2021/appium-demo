@@ -18,4 +18,9 @@ public final class StopWatch {
         long end = System.nanoTime();
         return end - start;
     }
+
+    public long elapsedInMilliSecond() {
+        long end = System.nanoTime();
+        return (end - start)/1000000;
+    }
 }

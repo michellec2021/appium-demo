@@ -23,7 +23,7 @@ public class FindElementByAccessibilityIdTest extends BaseCase {
     @Test
     public void findRestaurantWithLogin() {
         UserLoginHelper userLoginHelper = new UserLoginHelper();
-        userLoginHelper.validUserLogin("mm@cc.com", "pwd11111");
+        userLoginHelper.validUserLogin("chancetopauto01@163.com", "pwd11111");
         WonderHomePage wonderHomePage = new WonderHomePage();
         repeatFindElementByAccessibility.findElementByAccessibility("wonder_on_home_page");
     }

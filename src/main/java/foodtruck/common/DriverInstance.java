@@ -37,8 +37,8 @@ public class DriverInstance {
     private void initSession() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName", SysProperties.DEVICE_NAME);
-        capabilities.setCapability("app", SysProperties.APP_PATH);
-        capabilities.setCapability("noReset", "true");
+        //capabilities.setCapability("app", SysProperties.APP_PATH);
+        //capabilities.setCapability("noReset", "true");
         try {
             if (SysProperties.DEVICE_OS.equalsIgnoreCase("android")) {
                 capabilities.setCapability("automationName", "UIAutomator2");
